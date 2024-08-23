@@ -638,3 +638,124 @@ input[id*="question-check"]:checked
 .atmosphere__img {
   width: 100%;
 }
+/* CTA */
+.cta {
+  margin-top: 140px;
+}
+.cta__container {
+  width: 1330px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.cta__inner {
+  position: relative;
+  text-align: center;
+  background: #fbfaff;
+  padding: 68px 20px;
+}
+.cta__img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 20px;
+}
+.cta__desc {
+  margin-top: 20px;
+  display: inline-block;
+  max-width: 574px;
+}
+.cta__btn {
+  margin-top: 40px;
+}
+.cta-decor-01,
+.cta-decor-02,
+.cta-decor-03 {
+  position: absolute;
+}
+.cta-decor-01 {
+  bottom: 0;
+  left: 0;
+}
+.cta-decor-02 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cta-decor-03 {
+  top: 0;
+  right: 0;
+}
+/* Footer */
+.footer {
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1330px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+.footer__logo {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+.footer-logo-icon {
+  width: 46px;
+  height: 46px;
+}
+.footer-logo-desc {
+  color: #080415;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.36; /* 136.364% */
+  text-decoration-line: underline;
+}
+.footer__avatar {
+  margin-right: -50px;
+}
+.footer-navbar {
+  margin-right: -20px;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 1429px;
+  max-width: calc(100% - 40px);
+  padding: 18px 129px 0;
+  margin: 32px auto 0;
+  border-top: 1px solid rgba(12, 7, 32, 0.2);
+}
+.footer__inter,
+.footer__term,
+.footer__policy {
+  color: #525771;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+  opacity: 0.6;
+}
+.footer__term,
+.footer__policy {
+  letter-spacing: -0.54px;
+}
+.footer__term {
+  display: inline-flex;
+  align-items: center;
+}
+.footer__term::before {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background: #525771;
+  opacity: 0.6;
+  margin: 0 13px 0 23px;
+}
