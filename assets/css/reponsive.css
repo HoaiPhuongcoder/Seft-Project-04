@@ -8,6 +8,15 @@
   .show-on-mobile {
     display: none;
   }
+  .special__control {
+    display: none;
+  }
+  .atmosphere__control {
+    display: none;
+  }
+  .footer__line {
+    display: none;
+  }
 }
 
 /* Tablet and mobile */
@@ -64,6 +73,80 @@
     font-size: 1.8rem;
     font-weight: 400;
   }
+  .hero__row {
+    flex-direction: column-reverse;
+  }
+  .hero__img-wrap {
+    overflow: hidden;
+  }
+  .hero__img {
+    height: auto;
+  }
+  .hero__background {
+    scale: 1;
+    bottom: 1px;
+    left: -170px;
+  }
+  .hero__decor {
+    display: none;
+  }
+  .social__inner {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 40px;
+  }
+  .social__heading {
+    flex-direction: column;
+  }
+  .social__heading::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: -5px 0 0;
+  }
+  .special__list {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .project__top {
+    text-align: center;
+    row-gap: 20px;
+  }
+  .atmosphere__bottom {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .footer__top {
+    flex-direction: column;
+  }
+  .footer__logo {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  .logo {
+    justify-content: normal;
+  }
+  .footer__avatar {
+    margin: 0;
+  }
+  .footer__bottom {
+    max-width: 100%;
+    border: none;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+  }
+  .footer__line {
+    width: 100%;
+    height: 1px;
+    background: #0c0720;
+    margin: 30px 0 20px;
+    opacity: 0.2;
+  }
+  .cta-decor-02 {
+    display: none;
+  }
 }
 /* Tablet breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -71,4 +154,29 @@
 
 /* Mobile breakpoint */
 @media screen and (max-width: 767.98px) {
+  .social__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: flex-start;
+    gap: 32px 0;
+  }
+  .hero__heading {
+    font-size: 7rem;
+  }
+  .project-item {
+    overflow: hidden;
+  }
+  .blog__decor-01,
+  .blog__decor-02 {
+    display: none;
+  }
+  .question-item__heading {
+    padding-right: 20px;
+  }
+  .footer-navbar {
+    margin-right: 0;
+  }
+  .navbar__link {
+    padding: 10px;
+  }
 }

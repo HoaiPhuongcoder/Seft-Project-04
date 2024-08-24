@@ -96,6 +96,8 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Responsive Css -->
     <link rel="stylesheet" href="./assets/css/reponsive.css" />
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header -->
@@ -111,25 +113,27 @@
               />
               <p class="logo-desc">hi@arif.interactive</p>
             </a>
-            <img
-              src="./assets/img/avatar.svg"
-              alt="Avatar"
-              class="header__avatar"
-            />
+            <a href="#">
+              <img
+                src="./assets/img/avatar.svg"
+                alt="Avatar"
+                class="header__avatar"
+              />
+            </a>
           </div>
           <nav class="navbar">
             <ul class="navbar__list">
               <li>
-                <a href="#!" class="navbar__link">Projects</a>
+                <a href="#project" class="navbar__link">Projects</a>
               </li>
               <li>
-                <a href="#!" class="navbar__link">Journey</a>
+                <a href="#journey" class="navbar__link">Journey</a>
               </li>
               <li>
-                <a href="#!" class="navbar__link">Service</a>
+                <a href="#service" class="navbar__link">Service</a>
               </li>
               <li>
-                <a href="#!" class="navbar__link">Contact</a>
+                <a href="#contact" class="navbar__link">Contact</a>
               </li>
             </ul>
           </nav>
@@ -163,16 +167,16 @@
         />
         <ul class="navbar-mobile__list">
           <li>
-            <a href="#!" class="navbar-mobile__link">Projects</a>
+            <a href="#prject" class="navbar-mobile__link">Projects</a>
           </li>
           <li>
-            <a href="#!" class="navbar-mobile__link">Journey</a>
+            <a href="#journey" class="navbar-mobile__link">Journey</a>
           </li>
           <li>
-            <a href="#!" class="navbar-mobile__link">Service</a>
+            <a href="#service" class="navbar-mobile__link">Service</a>
           </li>
           <li>
-            <a href="#!" class="navbar-mobile__link">Contact</a>
+            <a href="#contact" class="navbar-mobile__link">Contact</a>
           </li>
         </ul>
       </div>
@@ -188,6 +192,8 @@
                   src="./assets/img/hero-img.png"
                   alt="Hero image"
                   class="hero__img"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
                 />
                 <img
                   src="./assets/img/hero-bg.svg"
@@ -199,7 +205,13 @@
           </div>
           <div class="offset-lg-1 col-lg-5 col-12 g-lg-0">
             <div class="hero__info">
-              <h1 class="hero__heading">An Interactive Designer</h1>
+              <h1
+                class="hero__heading"
+                data-aos="fade-down"
+                data-aos-duration="2000"
+              >
+                An Interactive Designer
+              </h1>
               <p class="hero__desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                 urna, non nisl tincidunt ut elementum turpis.
@@ -335,8 +347,12 @@
           </div>
           <div class="special__list row">
             <!--Special Item 1 -->
-            <div class="col-lg-4">
-              <div class="special-item">
+            <div class="col-lg-4 col-12">
+              <div
+                class="special-item"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <img
                   src="./assets/icons/special-01.svg"
                   alt="icon"
@@ -354,8 +370,14 @@
               </div>
             </div>
             <!--Special Item 2 -->
-            <div class="col-lg-4">
-              <div class="special-item">
+            <div class="col-lg-4 col-12">
+              <div
+                class="special-item"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="700"
+                data-aos-delay="300"
+              >
                 <img
                   src="./assets/icons/special-02.svg"
                   alt="icon"
@@ -373,8 +395,14 @@
               </div>
             </div>
             <!--Special Item 3 -->
-            <div class="col-lg-4">
-              <div class="special-item">
+            <div class="col-lg-4 col-12">
+              <div
+                class="special-item"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="700"
+                data-aos-delay="600"
+              >
                 <img
                   src="./assets/icons/special-03.svg"
                   alt="icon"
@@ -392,15 +420,29 @@
               </div>
             </div>
           </div>
+          <div class="row special__control">
+            <div class="blog-item__slider-group">
+              <div class="blog-item__slider"></div>
+              <div class="blog-item__slider"></div>
+              <div class="blog-item__slider blog-item__slider--active"></div>
+              <div class="blog-item__slider"></div>
+              <div class="blog-item__slider"></div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Project -->
-      <section class="project">
+      <section id="project" class="project">
         <div class="project__inner">
           <div class="container">
             <div class="row project__top">
               <div class="col-12 col-lg-5">
-                <h2 class="section-heading project__heading">
+                <h2
+                  class="section-heading project__heading"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                >
                   Take a look at my recent projects
                 </h2>
               </div>
@@ -414,7 +456,7 @@
             <div class="row project__list">
               <!-- Project item 1 -->
               <div class="col-lg-6 col-12">
-                <div class="project-item">
+                <div class="project-item" data-aos="zoom-out-right">
                   <div class="project-item__info">
                     <h3><a href="#!" class="sub-heading">Wally Website</a></h3>
                     <p class="project-item__desc">
@@ -438,7 +480,7 @@
               </div>
               <!-- Project item 2 -->
               <div class="col-lg-6 col-12">
-                <div class="project-item">
+                <div class="project-item" data-aos="zoom-out-left">
                   <div class="project-item__info">
                     <h3><a href="#!" class="sub-heading">Banking App</a></h3>
                     <p class="project-item__desc">
@@ -462,7 +504,11 @@
               </div>
               <!-- Project item 3 -->
               <div class="col-lg-6 col-12">
-                <div class="project-item">
+                <div
+                  class="project-item"
+                  data-aos="zoom-out-right"
+                  data-aos-delay="300"
+                >
                   <div class="project-item__info">
                     <h3><a href="#!" class="sub-heading">Web App</a></h3>
                     <p class="project-item__desc">
@@ -486,7 +532,11 @@
               </div>
               <!-- Project item 4 -->
               <div class="col-lg-6 col-12">
-                <div class="project-item">
+                <div
+                  class="project-item"
+                  data-aos="zoom-out-left"
+                  data-aos-delay="300"
+                >
                   <div class="project-item__info">
                     <h3><a href="#!" class="sub-heading">Oculus Website</a></h3>
                     <p class="project-item__desc">
@@ -516,7 +566,7 @@
         </div>
       </section>
       <!-- Interact -->
-      <section class="interact">
+      <section class="interact" id="journey">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -536,8 +586,8 @@
                 <div class="interact__list">
                   <!--Interact Item 1 -->
                   <div class="interact-item">
-                    <p class="interact-item__heading">08+</p>
-                    <p class="interact-item__desc">Years Experience</p>
+                    <p class="interact-item__heading">21+</p>
+                    <p class="interact-item__desc">Features & Awards</p>
                   </div>
                   <!--Interact Item 1 -->
                   <div class="interact-item">
@@ -546,14 +596,18 @@
                   </div>
                   <!--Interact Item 1 -->
                   <div class="interact-item">
-                    <p class="interact-item__heading">08+</p>
-                    <p class="interact-item__desc">Years Experience</p>
+                    <p class="interact-item__heading">97%</p>
+                    <p class="interact-item__desc">Clients Rating</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <figure class="interact__video-wrap">
+          <figure
+            class="interact__video-wrap"
+            data-aos="flip-up"
+            data-aos-delay="500"
+          >
             <video
               poster="./assets/img/interact-poster.jpg"
               loop
@@ -577,7 +631,11 @@
           </div>
           <div class="row blog__row">
             <!-- Blog Item 1 -->
-            <div class="col-12 blog-item">
+            <div
+              class="col-12 blog-item"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+            >
               <p class="blog-item__message">
                 “Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -702,7 +760,11 @@
                   id="question-check-box-01"
                   hidden
                 />
-                <div class="question-item">
+                <div
+                  class="question-item"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
                   <div class="question-item__top">
                     <h3 class="question-item__heading">
                       What is your hourly rate?
@@ -726,7 +788,13 @@
                   id="question-check-box-02"
                   hidden
                 />
-                <div class="question-item">
+                <div
+                  class="question-item"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  ;
+                >
                   <div class="question-item__top">
                     <h3 class="question-item__heading">
                       What type of projects do you take on?
@@ -750,7 +818,12 @@
                   id="question-check-box-03"
                   hidden
                 />
-                <div class="question-item">
+                <div
+                  class="question-item"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
                   <div class="question-item__top">
                     <h3 class="question-item__heading">
                       How do you charge for projects ?
@@ -774,7 +847,12 @@
                   id="question-check-box-04"
                   hidden
                 />
-                <div class="question-item">
+                <div
+                  class="question-item"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
                   <div class="question-item__top">
                     <h3 class="question-item__heading">
                       What time-zone do you work in?
@@ -798,7 +876,12 @@
                   id="question-check-box-05"
                   hidden
                 />
-                <div class="question-item">
+                <div
+                  class="question-item"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                >
                   <div class="question-item__top">
                     <h3 class="question-item__heading">
                       How often can we communicate?
@@ -819,7 +902,7 @@
         </div>
       </section>
       <!-- Atmosphere -->
-      <section class="atmosphere">
+      <section class="atmosphere" id="service">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -839,6 +922,8 @@
                 src="./assets/img/atmosphere-01.png"
                 alt="Computer"
                 class="atmosphere__img"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
               />
             </div>
             <div class="col-lg-4 col-12">
@@ -846,6 +931,9 @@
                 src="./assets/img/atmosphere-02.png"
                 alt="Computer"
                 class="atmosphere__img"
+                data-aos="zoom-in-up"
+                data-aos-delay="200"
+                data-aos-duration="1500"
               />
             </div>
             <div class="col-lg-4 col-12">
@@ -853,15 +941,27 @@
                 src="./assets/img/atmosphere-03.png"
                 alt="Computer"
                 class="atmosphere__img"
+                data-aos="zoom-in-up"
+                data-aos-delay="400"
+                data-aos-duration="1500"
               />
+            </div>
+          </div>
+          <div class="row atmosphere__control">
+            <div class="blog-item__slider-group">
+              <div class="blog-item__slider"></div>
+              <div class="blog-item__slider"></div>
+              <div class="blog-item__slider blog-item__slider--active"></div>
+              <div class="blog-item__slider"></div>
+              <div class="blog-item__slider"></div>
             </div>
           </div>
         </div>
       </section>
       <!-- Cta -->
-      <section class="cta">
+      <section class="cta" id="contact">
         <div class="cta__container">
-          <div class="cta__inner">
+          <div class="cta__inner" data-aos="zoom-in" data-aos-delay="400">
             <div>
               <img src="./assets/img/cta-01.svg" alt="Emoji" class="cta__img" />
               <h2 class="section-heading">Got a project? Let’s talk</h2>
@@ -911,27 +1011,32 @@
         <nav class="footer-navbar">
           <ul class="navbar__list">
             <li>
-              <a href="#!" class="navbar__link">Projects</a>
+              <a href="#project" class="navbar__link">Projects</a>
             </li>
             <li>
-              <a href="#!" class="navbar__link">Journey</a>
+              <a href="#journey" class="navbar__link">Journey</a>
             </li>
             <li>
-              <a href="#!" class="navbar__link">Service</a>
+              <a href="#service" class="navbar__link">Service</a>
             </li>
             <li>
-              <a href="#!" class="navbar__link">Contact</a>
+              <a href="#contact" class="navbar__link">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="footer__bottom">
         <p class="footer__inter">©interactiveArif 2021. All rights reserved.</p>
+        <div class="footer__line"></div>
         <div class="footer__info">
           <a href="#!" class="footer__policy">Privacy Policy</a>
           <a href="#!" class="footer__term">Terms of Conditions</a>
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
